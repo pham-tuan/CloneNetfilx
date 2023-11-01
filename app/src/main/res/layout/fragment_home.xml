@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home3.HomeFragment"
+    android:background="@color/black">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/black">
+
+       <ImageView
+           android:id="@+id/imgtop"
+           android:layout_width="match_parent"
+           android:layout_height="350dp"
+           android:adjustViewBounds="true"
+           android:scaleType="fitXY"
+           android:src="@drawable/anhnen"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <LinearLayout
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:orientation="horizontal"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
+
+           <ImageView
+               android:layout_width="53dp"
+               android:layout_height="57dp"
+               android:src="@drawable/logos_netflix_icon" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:text="TV Show"
+               android:textColor="@color/white"
+               android:textSize="16dp"
+               android:textStyle="bold" />
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:src="@drawable/baseline_arrow_drop_down_24" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginStart="10dp"
+               android:text="All Genres"
+               android:textColor="@color/white"
+               android:textSize="16dp" />
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:src="@drawable/baseline_arrow_drop_down_24" />
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/llplay"
+           android:layout_width="match_parent"
+           android:layout_height="66dp"
+           android:background="@color/black"
+           android:orientation="horizontal"
+           android:weightSum="3"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/imgtop"
+           android:layout_marginBottom="20dp">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="20dp"
+                   android:src="@drawable/ant_design_plus_outlined" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:text="My List"
+                   android:textColor="@color/white" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:orientation="vertical">
+
+               <Button
+                   android:id="@+id/play"
+                   android:layout_width="150dp"
+                   android:layout_height="60dp"
+                   android:layout_marginTop="8dp"
+                   android:layout_gravity="center_horizontal"
+                   android:background="@drawable/btn_play"
+                   android:elevation="1dp"/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="20dp"
+                   android:src="@drawable/feather_info" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:text="Info"
+                   android:textColor="@color/white" />
+           </LinearLayout>
+
+
+       </LinearLayout>
+
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/rcFilmHome"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:layout_constraintTop_toBottomOf="@+id/llplay" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

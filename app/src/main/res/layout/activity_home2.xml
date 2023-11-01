@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home2"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="158dp"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/logos_netflix"/>
+
+    <ImageView
+        android:id="@+id/mot"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:src="@drawable/groupmot"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        />
+
+    <ImageView
+        android:id="@+id/ba"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:src="@drawable/gruophai"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintStart_toEndOf="@+id/mot"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        />
+
+
+    <ImageView
+        android:id="@+id/hai"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:src="@drawable/groupba"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mot"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:src="@drawable/groupbon"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/hai"
+        app:layout_constraintTop_toBottomOf="@+id/ba"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

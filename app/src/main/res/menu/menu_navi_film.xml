@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/line_md_home_simple"
+        android:title="home"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/seach"
+        android:enabled="true"
+        android:icon="@drawable/seach"
+        android:title="seach"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/comming"
+        android:enabled="true"
+        android:icon="@drawable/vector"
+        android:title="comming"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/down"
+        android:enabled="true"
+        android:icon="@drawable/fe_download"
+        android:title="down"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu"
+        android:enabled="true"
+        android:icon="@drawable/menu"
+        android:title="menu"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>
